@@ -1,0 +1,19 @@
+The conceptual data model contains seven entities which form six different relationships between the entities. 
+CUSTOMER and SALES_ORDER
+Maximum cardinality: One-to-Many (1: N) = > A CUSTOMER can have one or many SALES_ORDERs, but each SALES_ORDER belongs to only one CUSTOMER.
+Minimum cardinality: Mandatory-to-Optional(M:O) = > A SALES_ORDER must have a CUSTOMER, but a CUSTOMER does not need to be associated to a SALES ORDER.
+SALES_ORDER and ORDER_ITEM
+Maximum cardinality: One-to-Many (1: N) = > A SALES_ORDER can have one or more ORDER_ITEMs. But each ORDER_ITEM is associated with only one SALES_ORDER.
+Minimum cardinality: Mandatory-to-Optional(M:O) = > A SALES_ORDER must contain at least one ORDER_ITEM, but an ORDER_ITEM might not be associated with any SALES_ORDER.
+ORDER_ITEM and PRODUCT
+Maximum cardinality: One-to-Many (1: N) = > An ORDER_ ITEM can only represent a single PRODUCT, but a PRODUCT can appear in multiple ORDER_ITEMS across many SALES_ORDERs. 
+Minimum Cardinality: Mandatory-to-Optional(M:O) = > An ORDER_ITEM must have a PRODUCT, but a PRODUCT might not be included in any ORDER_ITEMs. 
+PRODUCT and CATEGORY
+Maximum cardinality: One-to-Many (1: N) = > Each PRODUCT belongs to a single CATEGORY, but each CATEGORY can include multiple PRODUCTs.
+Minimum cardinality: Mandatory-to-Many (M: M) = > Each PRODUCT must belong to at least one CATEGORY, and each CATEGORY must include at least one PRODUCT. 
+PRODUCT and SUPPLIERS
+Maximum cardinality: One-to-Many (1: N) = > Each PRODUCT is supplied by a single SUPPLIER. But a SUPPLIER can supply multiple PRODUCTs. 
+Minimum cardinality: Mandatory-to-Many (M: N) = > Each PRODUCT must have one SUPPLIER and each SUPPLIER must have at least one PRODUCT. 
+CUSTOMER and LOYALTY_PROGRAM
+Maximum cardinality: One-to-One (1: 1) = > A CUSTOMER can participate in the LOYALTY_PROGRAM; and each LOYALTY_PROGRAM is associated with only one CUSTOMER. 
+Minimum cardinality: Optional-to-Many(O:M) = > A CUSTOMER does not have to participate in the LOYALTY_PROGRAM, but a LOYALTY_PROGRAM must have at least one CUSTOMER. 
