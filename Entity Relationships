@@ -1,5 +1,5 @@
 The conceptual data model contains seven entities which form six different relationships between the entities. 
-CUSTOMER and SALES_ORDER
+b
 Maximum cardinality: One-to-Many (1: N) = > A CUSTOMER can have one or many SALES_ORDERs, but each SALES_ORDER belongs to only one CUSTOMER.
 Minimum cardinality: Mandatory-to-Optional(M:O) = > A SALES_ORDER must have a CUSTOMER, but a CUSTOMER does not need to be associated to a SALES ORDER.
 SALES_ORDER and ORDER_ITEM
@@ -17,3 +17,34 @@ Minimum cardinality: Mandatory-to-Many (M: N) = > Each PRODUCT must have one SUP
 CUSTOMER and LOYALTY_PROGRAM
 Maximum cardinality: One-to-One (1: 1) = > A CUSTOMER can participate in the LOYALTY_PROGRAM; and each LOYALTY_PROGRAM is associated with only one CUSTOMER. 
 Minimum cardinality: Optional-to-Many(O:M) = > A CUSTOMER does not have to participate in the LOYALTY_PROGRAM, but a LOYALTY_PROGRAM must have at least one CUSTOMER. 
+
+The logical and physical model of the database displays six different relationships between the seven tables. 
+CUSTOMER and SALES_ORDER
+The parent table is CUSTOMER and CustomerID is the primary key. SALES_ORDER is the child table with the foreign key CustomerID which references CustomerID in CUSTOMER. 
+SALES_ORDER and ORDER_ITEM
+The parent table is SALES_ORDER, and the primary key is SalesOrderID. The child table is ORDER_ITEM the foreign key is SalesOrderID which references SalesOrderID in SALES_ORDER. ORDER_ITEM has the primary key of OrderItemID.
+ORDER_ITEM and PRODUCT
+The parent table is PRODUCT, and the primary key is ProductID. The child table is ORDER_ITEM, and the foreign key is ProductID which references ProductID in PRODUCT.
+PRODUCT and CATEGORY
+The parent table is CATEGORY, and the primary key is CategoryID. The child table is PRODUCT, and the foreign key is CategoryID which references CategoryID in CATEGORY.
+PRODUCT and SUPPLIER
+The parent table is SUPPLIER, and the primary key is SupplierID. The child table is PRODUCT, and the foreign key is SupplierID which references SupplierID in SUPPLIER.
+CUSTOMER and LOYALTY_PROGRAM 
+The parent table is CUSTOMER, and the primary key is CustomerID. LOYALTY_PROGRAM is the child table, and the foreign key is CustomerID which references CustomerID in CUSTOMER. LOYALTY_PROGRAM has a primary key of LoyaltyProgramID.
+
+List of Functional Dependencies
+Functional Dependency of CUSTOMER table.
+CustomerID         (FirstName, LastName, Email, PhoneNumber, Street, City, State, PostalCode)
+Functional Dependency of SALES_ORDER table
+SalesOrderID           (CustomerID, OrderDate, OrderStatus, DeliveryDate, Subtotal, Tax, Total, PaymentMethod, OrderNotes)
+Functional Dependency of LOYALTY_PROGRAM table
+LoyaltyProgramID          (CustomerID, LoyaltyPointsUsed, LoyaltyPoints, LoyaltyLevel) 
+Functional Dependency of ORDER_ITEM table
+OrderItemID          (SalesOrderID, ProductID, Quantity, UnitPrice, Discount, TotalPrice)
+Functional Dependency of PRODUCT table
+ProductID           (Name, SKU, CategoryID, SupplierID, UnitOfMeasurment, HarvestDate, ShelfLife, AvailibilityStatus, ReorderThreshold)
+Functional Dependency of CATEGORY table
+CategoryID          (CategoryName, Description, ActiveStatus)
+Functional Dependency of SUPPLIER table
+SupplierID           (Name, Email, PhoneNumber, LeadTime)
+ 
