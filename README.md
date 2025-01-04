@@ -49,5 +49,8 @@ Order data, like quantity, price, date, and shipping status, should track order 
 -	ORDER_ITEM (OrderItemID, SalesOrderID, ProductID, Quantity, UnitPrice, Discount, TotalPrice) 
 -	CATEGORY (CategoryID, CategoryName, Description, ActiveStatus)
 -	LOYALTY_PROGRAM (LoyaltyProgramID, CustomerID, LoyaltyPointsUsed, LoyaltyPoints, LoyaltyLevel)
+
+-	![image](https://github.com/user-attachments/assets/2067d6bd-ab89-43ed-a675-8ef73b650b9e)
+
  
 
