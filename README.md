@@ -50,7 +50,35 @@ Order data, like quantity, price, date, and shipping status, should track order 
 -	CATEGORY (CategoryID, CategoryName, Description, ActiveStatus)
 -	LOYALTY_PROGRAM (LoyaltyProgramID, CustomerID, LoyaltyPointsUsed, LoyaltyPoints, LoyaltyLevel)
 
+**E-R Model into Relationship Model**
 -	![image](https://github.com/user-attachments/assets/2067d6bd-ab89-43ed-a675-8ef73b650b9e)
+
+**Relationship View**
+-	![image](https://github.com/user-attachments/assets/b87ae5e6-9c5f-4747-bcbe-ea727d9b1bad)
+
+**Insert Tables**
+Customer Data
+![image](https://github.com/user-attachments/assets/ab68fd28-2b1a-434f-8560-1d00f06f1892)
+
+Supplier Data
+![image](https://github.com/user-attachments/assets/9b9aaf53-de89-4606-8cae-e7e1173bcaee)
+
+Category Data
+![image](https://github.com/user-attachments/assets/7b4e2cf4-472b-4bb1-8a87-636eb2278a1f)
+
+Product Data
+![image](https://github.com/user-attachments/assets/5c77e68e-3b15-405f-ac90-1e8535d08a2e)
+
+Sales Order Data
+![image](https://github.com/user-attachments/assets/46f1b70a-01cc-4f3b-ab2d-0b07fe6f58b2)
+
+Order Item Data
+![image](https://github.com/user-attachments/assets/69acf4ae-576e-4493-926c-83e820c6454c)
+
+Loyalty Program Data
+![image](https://github.com/user-attachments/assets/80298b6c-33ea-41fb-b52b-deffb6ef2b8f)
+
+
 
  
 
