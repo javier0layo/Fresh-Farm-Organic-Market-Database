@@ -1,7 +1,9 @@
 # Fresh-Farm-Organic-Market-Database
 COURSE: Database Systems
+
 DATE: 9/24 - 12/24
-Contributor(s): Andrew Fuller, Talha Butt, Nelson Rodriguez
+
+Contributor(s): Andrew Fuller, Talha Ikram, Nelson Rodriguez
 
 **Executive Summary:**
 Our business, Fresh Farm Organic Market, was established to cater to health-conscious consumers seeking high-quality, organic products. However, the Covid-19 pandemic posed significant challenges, as lockdowns and reduced foot traffic led to a substantial loss of revenue. The company faced the risk of bankruptcy due to its reliance on a brick-and-mortar model.
